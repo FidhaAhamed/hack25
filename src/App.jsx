@@ -1,10 +1,11 @@
 import './App.css'
+import Hero from'./Pages/Hero/Hero';
 
 function App() {
 
   return (
     <>
-      <h1 className='text-5xl'>Welcome</h1>
+      <Hero />
     </>
   )
 }
