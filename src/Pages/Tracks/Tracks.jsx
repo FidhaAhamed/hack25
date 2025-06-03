@@ -41,7 +41,7 @@ const tracks = [
 export default function Tracks() {
   return (
     <div className="bg-black text-white py-6 px-4 min-h-[80vh]">
-      <h2 className="text-4xl font-bold text-center mb-8 tracking-widest" style={{ fontFamily: 'monospace' }}>
+      <h2 className="text-5xl font-bold text-center mb-8 tracking-widest" style={{ fontFamily: 'Moonwalk Miss' }}>
         OUR TRACKS
       </h2>
       <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full">
@@ -51,7 +51,7 @@ export default function Tracks() {
             <div key={i} className="relative w-full md:w-[420px] flex items-center justify-center">
               <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
               <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-5 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
-                <div className="text-base md:text-lg font-mono tracking-widest">
+                <div className="font-[Nebula] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                   {tracks[i].title}
                 </div>
                 <div className="text-4xl md:text-5xl ml-6 flex items-center">{tracks[i].icon}</div>
@@ -65,7 +65,7 @@ export default function Tracks() {
             <div key={i} className="relative w-full md:w-[500px] flex items-center justify-center">
               <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
               <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-5 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
-                <div className="text-base md:text-lg font-mono tracking-widest">
+                <div className="font-[Nebula] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                   {tracks[i].title}
                 </div>
                 <div className="text-4xl md:text-5xl ml-6">{tracks[i].icon}</div>
@@ -79,7 +79,7 @@ export default function Tracks() {
             <div key={i} className="relative w-full md:w-[800px] flex items-center justify-center">
               <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
               <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-5 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
-                <div className="text-base md:text-lg font-mono tracking-widest">
+                <div className="font-[Nebula] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                   {tracks[i].title}
                 </div>
                 <div className="text-4xl md:text-5xl ml-6">{tracks[i].icon}</div>
@@ -92,7 +92,7 @@ export default function Tracks() {
           <div className="relative w-full md:w-[700px] flex items-center justify-center">
             <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
             <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-5 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
-              <div className="text-base md:text-lg font-mono tracking-widest">
+              <div className="font-[Nebula] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                 {tracks[6].title}
               </div>
               <div className="text-4xl md:text-5xl ml-6">{tracks[6].icon}</div>
