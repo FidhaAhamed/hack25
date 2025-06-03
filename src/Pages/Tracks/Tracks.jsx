@@ -1,48 +1,104 @@
 import React from 'react';
+import civicspace from '../../Pages/Tracks/civicspace.png'; 
+import bluewave from '../../Pages/Tracks/bluewave.png';
+import heritage from '../../Pages/Tracks/heritage.png';
+import spicechain from '../../Pages/Tracks/spicechain.png';
+import voice from '../../Pages/Tracks/voice.png';
+import waste from '../../Pages/Tracks/waste.png';
+import agronext from '../../Pages/Tracks/agronext.png';
 
 const tracks = [
   {
     title: 'CIVICSPHERE: TECH FOR TRANSPARENT GOVERNANCE',
-    icon: '🏛️',
+    icon: <img src={civicspace} alt="Civicspace" className="w-20 h-20 object-contain" />,
   },
   {
     title: 'BLUEWAVE: INNOVATION FOR OCEAN & COAST',
-    icon: '🌊',
+    icon: <img src={bluewave} alt="Bluewave" className="w-20 h-20 object-contain" />,
   },
   {
     title: "HERITAGE REWIRED: DIGITIZING KERALA'S CULTURAL SOUL",
-    icon: '🎭',
+    icon: <img src={heritage} alt="Heritage" className="w-20 h-20 object-contain" />,
   },
   {
     title: "SPICECHAIN INNOVATION FOR KERALA'S SPICE ECONOMY",
-    icon: '🌶️',
+    icon: <img src={spicechain} alt="Spicechain" className="w-20 h-20 object-contain" />,
   },
   {
     title: 'VOICE OF THE LAND: TECH FOR TRIBAL RIGHTS & LEGAL AWARENESS',
-    icon: '🧑‍🌾',
+    icon: <img src={voice} alt="Voice" className="w-20 h-20 object-contain" />,
   },
   {
     title: 'FROM WASTE CRISIS TO CIRCULAR ECONOMY—CODE THE CHANGE',
-    icon: '🗑️',
+    icon: <img src={waste} alt="Waste" className="w-20 h-20 object-contain" />,
+  },
+  {
+    title: 'AGRONEXT: SMART FARMING FOR TOMORROW',
+    icon: <img src={agronext} alt="Agronext" className="w-20 h-20 object-contain" />,
   },
 ];
 
 export default function Tracks() {
   return (
-    <div className="bg-black text-white py-10 px-4">
-      <h2 className="text-3xl font-bold text-center mb-8">OUR TRACKS</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        {tracks.map((track, index) => (
-          <div
-            key={index}
-            className="bg-red-800 text-white p-6 rounded-md shadow-md flex items-center space-x-4 hover:bg-red-700 transition-colors"
-          >
-            <div className="text-3xl">{track.icon}</div>
-            <div className="text-sm font-semibold uppercase tracking-wide">
-              {track.title}
+    <div className="bg-black text-white py-10 px-4 min-h-screen">
+      <h2 className="text-4xl font-bold text-center mb-12 tracking-widest" style={{ fontFamily: 'monospace' }}>
+        OUR TRACKS
+      </h2>
+      <div className="flex flex-col gap-8 max-w-6xl mx-auto w-full">
+        {/* First row */}
+        <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+          {[0, 1].map((i) => (
+            <div key={i} className="relative w-full md:w-[420px] flex items-center justify-center">
+              <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
+              <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-6 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
+                <div className="text-base md:text-lg font-mono tracking-widest">
+                  {tracks[i].title}
+                </div>
+                <div className="text-4xl md:text-5xl ml-6 flex items-center">{tracks[i].icon}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Second row */}
+        <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+          {[2, 3].map((i) => (
+            <div key={i} className="relative w-full md:w-[540px] flex items-center justify-center">
+              <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
+              <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-6 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
+                <div className="text-base md:text-lg font-mono tracking-widest">
+                  {tracks[i].title}
+                </div>
+                <div className="text-4xl md:text-5xl ml-6">{tracks[i].icon}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Third row */}
+        <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+          {[4, 5].map((i) => (
+            <div key={i} className="relative w-full md:w-[700px] flex items-center justify-center">
+              <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
+              <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-6 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
+                <div className="text-base md:text-lg font-mono tracking-widest">
+                  {tracks[i].title}
+                </div>
+                <div className="text-4xl md:text-5xl ml-6">{tracks[i].icon}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* Fourth row for 7th track */}
+        <div className="flex flex-col md:flex-row gap-8 justify-center w-full">
+          <div className="relative w-full md:w-[700px] flex items-center justify-center">
+            <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
+            <div className="relative z-10 bg-gradient-to-br from-[#a1001f] to-[#6d0015] p-6 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
+              <div className="text-base md:text-lg font-mono tracking-widest">
+                {tracks[6].title}
+              </div>
+              <div className="text-4xl md:text-5xl ml-6">{tracks[6].icon}</div>
             </div>
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
