@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         nebula: ['Nebula', 'sans-serif'],  
+        moonwalkmiss: ['Moonwalk Miss', 'cursive'],
+        csclairemonodrawn: ['CSClaireMonoDrawn', 'monospace'],
       },
     },
   },
