@@ -1,27 +1,29 @@
 // src/Sponsors.jsx
-import React from 'react';
+
+import React from "react";
 
 const sponsors = [
-  { name: 'Solana', logo: '🟪' },
-  { name: 'DigitalOcean', logo: '🟦' },
-  { name: 'Polygon', logo: '⬡' },
-  { name: 'Tezos', logo: '✝️' },
-  { name: 'Replit', logo: '⏹️' },
-  { name: 'Filecoin', logo: '💾' },
-  // Add more as needed
+  { name: "Solana", logo: "/assets/solana.png" },
+  { name: "DigitalOcean", logo: "/assets/digitalocean.png" },
+  { name: "Polygon", logo: "/assets/polygon.png" },
+  { name: "Tezos", logo: "/assets/tezos.png" },
+  { name: "Replit", logo: "/assets/replit.png" },
+  { name: "Filecoin", logo: "/assets/filecoin.png" },
 ];
 
 const Sponsors = () => {
   return (
-    <section className="bg-black py-12 text-white text-center">
-      <h2 className="text-4xl font-bold mb-10 font-mono">PREVIOUS SPONSORS</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 place-items-center">
+    <section className="bg-black py-20 text-white text-center">
+      <h2 className="text-4xl font-bold mb-12">Our Sponsors</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8 justify-items-center px-8">
         {sponsors.map((sponsor, index) => (
-          <div key={index} className="text-xl font-semibold">
-            <div className="bg-white text-black p-4 rounded-xl w-28 h-28 flex items-center justify-center shadow-lg">
-              {sponsor.logo}
-            </div>
-            <p className="mt-2">{sponsor.name}</p>
+          <div key={index} className="flex flex-col items-center">
+            <img
+              src={sponsor.logo}
+              alt={sponsor.name}
+              className="w-24 h-24 object-contain rounded-full bg-white p-2 shadow-lg"
+            />
+            <p className="mt-4 text-lg font-medium">{sponsor.name}</p>
           </div>
         ))}
       </div>
