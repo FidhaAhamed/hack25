@@ -1,29 +1,46 @@
 // src/Sponsors.jsx
 
-import React from "react";
+// src/components/Sponsors.jsx
+
+import React from 'react';
 
 const sponsors = [
-  { name: "Solana", logo: "/assets/solana.png" },
-  { name: "DigitalOcean", logo: "/assets/digitalocean.png" },
-  { name: "Polygon", logo: "/assets/polygon.png" },
-  { name: "Tezos", logo: "/assets/tezos.png" },
-  { name: "Replit", logo: "/assets/replit.png" },
-  { name: "Filecoin", logo: "/assets/filecoin.png" },
+  '/src/assets/sponsors/verbwire.png',
+  '/src/assets/sponsors/streamyard.png',
+  '/src/assets/sponsors/filecoin.png',
+  '/src/assets/sponsors/solana.png',
+  '/src/assets/sponsors/digitalocean.png',
+  '/src/assets/sponsors/polygon.png',
+    '/src/assets/sponsors/tezos.png',
+     '/src/assets/sponsors/replit.png',
+    '/src/assets/sponsors/innovation.png',
+       '/src/assets/sponsors/qburst.png',
+         '/src/assets/sponsors/experion.png',
+         '/src/assets/sponsors/devfolio.png',
+         '/src/assets/sponsors/keyvalue.png',
+         '/src/assets/sponsors/beingabroad.png',
+        '/src/assets/sponsors/acceleratex.png',
+       '/src/assets/sponsors/ieee.png',
 ];
 
 const Sponsors = () => {
   return (
-    <section className="bg-black py-20 text-white text-center">
-      <h2 className="text-4xl font-bold mb-12">Our Sponsors</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-16 gap-x-8 justify-items-center px-8">
-        {sponsors.map((sponsor, index) => (
-          <div key={index} className="flex flex-col items-center">
+    <section className="bg-white py-12 px-4">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
+        Our Sponsors
+      </h2>
+
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center max-w-6xl mx-auto">
+        {sponsors.map((logo, index) => (
+          <div
+            key={index}
+            className="p-4 bg-gray-50 rounded-xl shadow hover:shadow-lg transition-all duration-300 flex justify-center items-center"
+          >
             <img
-              src={sponsor.logo}
-              alt={sponsor.name}
-              className="w-24 h-24 object-contain rounded-full bg-white p-2 shadow-lg"
+              src={logo}
+              alt={`Sponsor ${index + 1}`}
+              className="h-20 object-contain"
             />
-            <p className="mt-4 text-lg font-medium">{sponsor.name}</p>
           </div>
         ))}
       </div>
