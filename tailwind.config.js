@@ -11,6 +11,7 @@ export default {
         moonwalkmiss: ['Moonwalk Miss', 'cursive'],
         csclairemonodrawn: ['CSClaireMonoDrawn', 'monospace'],
       },
+      
     },
   },
   plugins: [],
