@@ -7,7 +7,7 @@ export default function Hero() {
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/Images/hero-bg.png')" }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-30" />
+      <div className="absolute inset-0 bg-black bg-opacity-20" />
 
       {/* Content */}
       <div className="relative z-10 flex flex-col h-full px-6 md:px-16 pt-40">
@@ -23,9 +23,9 @@ export default function Hero() {
 
         {/* Register Now Button */}
         <div className="absolute bottom-16 w-full flex justify-center z-10">
-          <button className="group flex items-center gap-3 text-white text-2xl md:text-3xl font-nebula tracking-wide hover:text-red-500 transition-all">
+          <button className="group flex items-center gap-3 text-white text-2xl md:text-3xl font-nebula tracking-wide hover:text-[#7C0918] transition-all">
             REGISTER NOW
-            <ArrowRightCircle strokeWidth={1} className="w-8 h-8 text-white group-hover:text-red-500 transition" />
+            <ArrowRightCircle strokeWidth={1} className="w-8 h-8 text-white group-hover:text-[#A50C20] transition" />
           </button>
         </div>
 
