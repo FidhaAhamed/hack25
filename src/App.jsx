@@ -1,3 +1,4 @@
+import Sponsors from './Sponsors';
 import './App.css'
 import Hero from'./Pages/Hero/Hero';
 import About from './Pages/About/About'
