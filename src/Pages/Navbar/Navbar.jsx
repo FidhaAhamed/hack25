@@ -7,7 +7,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="absolute top-8 left-1/2 transform -translate-x-1/2 z-50 bg-black/60 rounded-full px-6 py-2 flex gap-4">
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-black/60 backdrop-blur-md rounded-full px-6 py-2 flex gap-4 shadow-lg">
       <button
         onClick={() => handleScroll("home")}
         className="text-white font-nebula hover:bg-red-700 rounded-full px-4 py-2 transition"
@@ -27,10 +27,10 @@ const Navbar = () => {
         Timeline
       </button>
       <button
-        onClick={() => handleScroll("sessions")}
+        onClick={() => handleScroll("tracks")}
         className="text-white font-nebula hover:bg-red-700 rounded-full px-4 py-2 transition"
       >
-        Sessions
+        Tracks
       </button>
       <button
         onClick={() => handleScroll("sponsors")}

@@ -10,8 +10,8 @@ const Timeline = () => {
 
       <h2 className="text-center text-[50px] font-moonwalkmiss mb-16">TIMELINE</h2>
       
-      <div className="max-w-5xl mx-auto border border-gray-600 rounded-xl p-10 relative">
-        {/* Vertical line */}
+      <div className="max-w-5xl mx-auto border border-red-600 rounded-xl p-10 relative">
+        
         <div className="absolute top-10 left-1/2 transform -translate-x-1/2 h-[calc(100%-5rem)] w-0.5 bg-red-600 z-0" />
 
         {/* Timeline Events */}
