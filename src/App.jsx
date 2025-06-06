@@ -3,16 +3,16 @@ import Navbar from './Pages/Navbar/Navbar.jsx';
 
 import Hero from './Pages/Hero/Hero';
 import About from './Pages/About/About';
-import Timeline from './Pages/Timeline/Timeline.jsx';
+import Timeline from './Pages/Timeline/Timeline';
+import Tracks from './Pages/Tracks/Tracks';
 import FAQ from './Pages/FAQ/faq.jsx';
-import Footer from './Pages/Footer/Footer.jsx';
 import Sponsors from './Sponsors';
+import Footer from './Pages/Footer/Footer.jsx';
 
 function App() {
   return (
-    <div className="bg-black text-white scroll-smooth">
-      {/* NAVBAR ONLY INSIDE HERO */}
-      <section id="home">
+    <div>
+      <section id="home" className="relative min-h-screen">
         <Navbar />
         <Hero />
       </section>
@@ -25,11 +25,15 @@ function App() {
         <Timeline />
       </section>
 
-      <section id="sessions">
+      <section id="tracks">
+        <Tracks />
+      </section>
+
+      <section id="faq">
         <FAQ />
       </section>
 
-      <section id="sponsers">
+      <section id="sponsors">
         <Sponsors />
       </section>
 
