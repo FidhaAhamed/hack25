@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Heading from '../../Components/Heading/Heading';
 const sponsors = [
   '/src/assets/verbwire.png',
   '/src/assets/streamyard.png',
@@ -21,11 +21,8 @@ const sponsors = [
 
 const Sponsors = () => {
   return (
-    <section className="bg-white py-12 px-4">
-      <h2 className="text-3xl font-bold text-center text-gray-800 mb-10">
-        Our Sponsors
-      </h2>
-
+    <section className="bg-black py-12 px-4">
+    <Heading heading="OUR SPONSORS"/>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center max-w-6xl mx-auto">
         {sponsors.map((logo, index) => (
           <div
