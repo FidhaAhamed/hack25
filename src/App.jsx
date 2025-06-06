@@ -4,7 +4,7 @@ import Hero from'./Pages/Hero/Hero';
 import About from './Pages/About/About'
 import Tracks from './Pages/Tracks/Tracks';
 import Timeline from './Pages/Timeline/Timeline.jsx' 
-import Sponsors from './Sponsors';
+import Sponsors from './Pages/Sponsors/Sponsors.jsx';
 import FAQ from './Pages/FAQ/faq.jsx'
 import Footer from './Pages/Footer/Footer.jsx';
 
@@ -12,6 +12,7 @@ function App() {
 
   return (
     <>
+      <Sponsors/>
       <Navbar />
       <Hero />      
       <About/>
