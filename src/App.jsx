@@ -12,12 +12,12 @@ function App() {
 
   return (
     <>
-      <Sponsors/>
       <Navbar />
       <Hero />      
       <About/>
       <Tracks />
       <Timeline />
+      <Sponsors/>
       <FAQ/>
       <Footer />
     </>
