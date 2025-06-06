@@ -41,9 +41,9 @@ const tracks = [
 
 export default function Tracks() {
   return (
-    <div className="bg-black text-white py-6 px-4 min-h-[80vh]">
+    <div className="bg-[#101111] text-white py-6 px-4 min-h-[80vh]">
         <Heading heading="OUR TRACKS" />
-      <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full">
+      <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full my-16">
         {/* First row */}
         <div className="flex flex-col md:flex-row gap-6 justify-center w-full">
           {[0, 1].map((i) => (
@@ -56,7 +56,7 @@ export default function Tracks() {
                     : 'bg-gradient-to-br from-[#250000] to-[#8B0000]'
                 }`}
               >
-                <div className="font-[CS Claire Mono Drawn Demo] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
+                <div className="font-csclairemonodrawn text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                   {tracks[i].title}
                 </div>
                 <div className="text-4xl md:text-5xl ml-6 flex items-center">{tracks[i].icon}</div>
@@ -77,7 +77,7 @@ export default function Tracks() {
                     : 'bg-gradient-to-br from-[#250000] to-[#8B0000]'
                 }`}
               >
-                <div className="font-[CS Claire Mono Drawn Demo] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
+                <div className="font-csclairemonodrawn text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                   {tracks[i].title}
                 </div>
                 <div className="text-4xl md:text-5xl ml-6">{tracks[i].icon}</div>
@@ -98,7 +98,7 @@ export default function Tracks() {
                     : 'bg-gradient-to-br from-[#250000] to-[#8B0000]'
                 }`}
               >
-                <div className="font-[CS Claire Mono Drawn Demo] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
+                <div className="font-csclairemonodrawn text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                   {tracks[i].title}
                 </div>
                 <div className="text-4xl md:text-5xl ml-6">{tracks[i].icon}</div>
@@ -112,7 +112,7 @@ export default function Tracks() {
           <div className="relative w-full md:w-[700px] flex items-center justify-center">
             <div className="absolute inset-0 rounded-2xl bg-white opacity-90 z-0 shadow-2xl" />
             <div className="relative z-10 bg-gradient-to-bl from-[#8B0000] to-[#250000] p-5 rounded-2xl shadow-lg flex items-center justify-between border border-white/60 transition-all w-full">
-              <div className="font-[CS Claire Mono Drawn Demo] font-normal text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
+              <div className="font-csclairemonodrawn text-[20px] leading-[100%] tracking-[5%] align-middle uppercase">
                 {tracks[6].title}
               </div>
               <div className="text-4xl md:text-5xl ml-6">{tracks[6].icon}</div>
