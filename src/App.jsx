@@ -11,8 +11,8 @@ function App() {
   return (
     <>
       <Hero />
-      <Tracks />
       <About/>
+      <Tracks />
       <FAQ/>
       <Footer />
     </>
