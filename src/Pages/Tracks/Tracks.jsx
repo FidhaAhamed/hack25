@@ -44,7 +44,7 @@ export default function Tracks() {
     <section id='tracks'>
     <div className="bg-[#101111] text-white py-6 px-4 min-h-[80vh]">
         <Heading heading="OUR TRACKS" />
-      <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full my-16">
+      <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full ">
         {/* First row */}
         <div className="flex flex-col md:flex-row gap-6 justify-center w-full">
           {[0, 1].map((i) => (
