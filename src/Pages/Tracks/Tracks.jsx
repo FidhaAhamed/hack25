@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from '../../Components/Heading/Heading';
 import civicspace from '../../Pages/Tracks/civicspace.png'; 
 import bluewave from '../../Pages/Tracks/bluewave.png';
 import heritage from '../../Pages/Tracks/heritage.png';
@@ -41,9 +42,7 @@ const tracks = [
 export default function Tracks() {
   return (
     <div className="bg-black text-white py-6 px-4 min-h-[80vh]">
-      <h2 className="font-MoonwalkMiss text-5xl font-bold text-center mb-8 tracking-widest">
-        OUR TRACKS
-    </h2>
+        <Heading heading="OUR TRACKS" />
       <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full">
         {/* First row */}
         <div className="flex flex-col md:flex-row gap-6 justify-center w-full">
