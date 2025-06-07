@@ -1,3 +1,4 @@
+
 import './App.css';
 import Navbar from './Pages/Navbar/Navbar.jsx';
 
@@ -41,10 +42,9 @@ function App() {
       <section id="sponsors">
         <Sponsors />
       </section>
-
       <Footer />
-    </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

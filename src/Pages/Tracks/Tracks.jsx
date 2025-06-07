@@ -1,12 +1,12 @@
 import React from 'react';
 import Heading from '../../Components/Heading/Heading';
-import civicspace from '../../Pages/Tracks/civicspace.png'; 
-import bluewave from '../../Pages/Tracks/bluewave.png';
-import heritage from '../../Pages/Tracks/heritage.png';
-import spicechain from '../../Pages/Tracks/spicechain.png';
-import voice from '../../Pages/Tracks/voice.png';
-import waste from '../../Pages/Tracks/waste.png';
-import agronext from '../../Pages/Tracks/agronext.png';
+import civicspace from '../../assets/civicspace.png'; 
+import bluewave from '../../assets/bluewave.png';
+import heritage from '../../assets/heritage.png';
+import spicechain from '../../assets/spicechain.png';
+import voice from '../../assets/voice.png';
+import waste from '../../assets/waste.png';
+import agronext from '../../assets/agronext.png';
 
 const tracks = [
   {
@@ -41,9 +41,10 @@ const tracks = [
 
 export default function Tracks() {
   return (
+    <section id='tracks'>
     <div className="bg-[#101111] text-white py-6 px-4 min-h-[80vh]">
         <Heading heading="OUR TRACKS" />
-      <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full my-16">
+      <div className="flex flex-col gap-6 max-w-6xl mx-auto w-full ">
         {/* First row */}
         <div className="flex flex-col md:flex-row gap-6 justify-center w-full">
           {[0, 1].map((i) => (
@@ -121,5 +122,6 @@ export default function Tracks() {
         </div>
       </div>
     </div>
+    </section>
   );
 }
