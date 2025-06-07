@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Hamburger */}
-      <div className="fixed top-4 right-10 z-50 md:hidden">
+      <div className="fixed top-4 right-4 z-50 md:hidden">
         <button onClick={() => setIsOpen(true)} className="text-white">
           <Menu size={32} />
         </button>
