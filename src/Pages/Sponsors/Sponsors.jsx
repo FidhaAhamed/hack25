@@ -21,7 +21,7 @@ const sponsors = [
 
 const Sponsors = () => {
   return (
-    <section className="bg-[#101111] py-12 px-4">
+    <section className="bg-[#101111] py-12 px-4 " id='sponsors'>
     <Heading heading="previous SPONSORS"/>
     <div className="max-w-5xl mx-auto border border-[#A50C20] rounded-xl p-10 relative">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center max-w-6xl mx-auto">

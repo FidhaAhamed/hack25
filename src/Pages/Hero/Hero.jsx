@@ -3,7 +3,8 @@ import { ArrowRightCircle } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <div
+    <section
+    id='home'
       className="relative w-full h-screen bg-cover bg-center"
       style={{ backgroundImage: "url('/Images/hero-bg.png')" }}
     >
@@ -30,6 +31,6 @@ export default function Hero() {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 }
