@@ -31,11 +31,12 @@ export default function FAQ() {
   };
 
   return (
-    <section
-      id="FAQ"
-      className="bg-primary-black text-white px-4 py-20 text-center sm:px-6 lg:px-8"
-    >
-      <h1 className="text-4xl sm:text-3xl font-orbitron tracking-widest uppercase mb-12 text-white">
+ <section
+  id="FAQ"
+  className="bg-[#101111] text-white px-4 py-20 text-center sm:px-6 lg:px-8"
+>
+
+      <h1 className="font-moonwalkmiss text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide uppercase text-center my-16">
         Frequently Asked Questions
       </h1>
 
@@ -44,7 +45,7 @@ export default function FAQ() {
           <div
             key={index}
             className={`border rounded-lg p-5 transition-all duration-300 cursor-pointer ${
-              openIndex === index ? 'bg-[#2a2a2a]' : 'bg-[#1a1a1a]'
+              openIndex === index ? 'bg-[#101111]' : 'bg-[#101111]'
             } border-primary-red`}
             onClick={() => toggleFAQ(index)}
           >
