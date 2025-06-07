@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import Heading from '../../Components/Heading/Heading';
+import mascot from '../../../public/Images/moscot.png';
 
 const faqData = [
   {
@@ -25,36 +27,58 @@ const faqData = [
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(null);
+  const [mascotX, setMascotX] = useState(0);
+  const [direction, setDirection] = useState(1);
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  // Mascot horizontal animation
+  useEffect(() => {
+    const maxMove = 120; // max pixels mascot moves right
+    const interval = setInterval(() => {
+      setMascotX((x) => {
+        if (x >= maxMove) setDirection(-1);
+        else if (x <= 0) setDirection(1);
+        return x + direction * 2;
+      });
+    }, 30);
+
+    return () => clearInterval(interval);
+  }, [direction]);
+
   return (
- <section
-  id="FAQ"
-  className="bg-[#101111] text-white px-4 py-20 text-center sm:px-6 lg:px-8"
->
+    <section
+      id="FAQ"
+      className="relative bg-[#101111] px-6 py-24 text-center sm:px-10 lg:px-16 overflow-hidden"
+    >
+      <Heading heading="Frequently Asked Questions" />
 
-      <h1 className="font-moonwalkmiss text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide uppercase text-center my-16">
-        Frequently Asked Questions
-      </h1>
-
-      <div className="max-w-2xl mx-auto space-y-4 text-left">
+      <div className="max-w-3xl mx-auto space-y-6 text-left relative z-10">
         {faqData.map((item, index) => (
           <div
             key={index}
-            className={`border rounded-lg p-5 transition-all duration-300 cursor-pointer ${
-              openIndex === index ? 'bg-[#101111]' : 'bg-[#101111]'
-            } border-primary-red`}
             onClick={() => toggleFAQ(index)}
+            className={`group cursor-pointer rounded-2xl p-6 bg-[#1f1f1f] border border-primary-red shadow-md
+              hover:bg-[#2b2b2b] hover:shadow-xl hover:scale-[1.03] transition-transform transition-colors duration-300`}
           >
-            <div className="text-lg font-bold text-primary-red font-orbitron">
-              {item.question}
+            <div className="flex justify-between items-center">
+              <h3 className="text-xl font-semibold text-primary-red font-csclairemonodrawn select-none">
+                {item.question}
+              </h3>
+              <div
+                className={`text-primary-red text-3xl font-bold transform transition-transform duration-300 select-none ${
+                  openIndex === index ? 'rotate-45' : 'rotate-0'
+                }`}
+                aria-hidden="true"
+              >
+                +
+              </div>
             </div>
             <div
-              className={`overflow-hidden transition-[max-height] duration-500 ease-in-out text-sm leading-relaxed font-csclairemonodrawn text-white ${
-                openIndex === index ? 'max-h-96 mt-2' : 'max-h-0'
+              className={`mt-4 text-sm text-gray-300 font-csclairemonodrawn leading-relaxed overflow-hidden transition-all duration-500 ease-in-out ${
+                openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
               {item.answer}
@@ -62,6 +86,18 @@ export default function FAQ() {
           </div>
         ))}
       </div>
+
+      {/* Mascot image - animated horizontal motion bottom right */}
+      <img
+        src={mascot}
+        alt="Mascot"
+        className="absolute bottom-4 pointer-events-none opacity-90"
+        style={{
+          width: '200px',
+          right: `${16 + mascotX}px`,
+          transition: 'right 0.03s linear',
+        }}
+      />
     </section>
   );
 }
