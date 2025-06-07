@@ -103,13 +103,13 @@ const Timeline = () => {
           
         </div>
       </div>
-      <div className="absolute bottom-[-30vh] sm:bottom-[-45vh] md:bottom-[-55vh] left-1/2 transform -translate-x-1/2 w-[110vw] sm:w-[95vw] md:w-[75vw] opacity-30 z-0 pointer-events-none">
-              <img
-                src={circuit}
-                alt="Circuit Background"
-                className="w-full h-auto object-cover rotate-180"
-              />
-            </div>
+      <div className="hidden md:block absolute bottom-[-55vh] left-1/2 transform -translate-x-1/2 w-[75vw] opacity-30 z-0 pointer-events-none">
+        <img
+          src={circuit}
+          alt="Circuit Background"
+          className="w-full h-auto object-cover rotate-180"
+        />
+      </div>
     </section>
   );
 };

@@ -28,7 +28,7 @@ export default function About() {
         6<sup>th</sup> EDITION
       </p>
 
-      <div className="absolute bottom-[-40vh] sm:bottom-[-55vh] md:bottom-[-65vh] left-1/2 transform -translate-x-1/2 w-[110vw] sm:w-[95vw] md:w-[75vw] opacity-30 z-0 pointer-events-none">
+      <div className="hidden md:block absolute bottom-[-65vh] left-1/2 transform -translate-x-1/2 w-[75vw] opacity-30 z-0 pointer-events-none">
         <img
           src={circuit}
           alt="Circuit Background"
