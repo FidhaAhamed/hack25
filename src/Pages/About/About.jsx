@@ -1,19 +1,18 @@
 import React from 'react';
+import Heading from '../../Components/Heading/Heading';
 import circuit from '../../assets/circuit.svg';
 
 export default function About() {
   return (
     <section
       id="about"
-      className="relative bg-primary-black text-white text-center px-4 py-20 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative bg-primary-black text-white text-center px-4 py-10 sm:px-6 lg:px-8"
     >
 
 
-      <h1 className="font-moonwalkmiss text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-wide uppercase text-center my-16 relative z-10">
-        ABOUT US
-      </h1>
+      <Heading heading= "about us" />
 
-      <p className="max-w-3xl mx-auto text-white font-csclairemonodrawn text-base sm:text-sm leading-relaxed relative z-10">
+      <p className="max-w-4xl mx-auto text-white font-csclairemonodrawn text-base md:text-lg text-justify leading-relaxed relative z-10">
         <span className="text-primary-red font-bold">›.hack();_ ‘25</span> is the 6th edition of IEEE MACE SB's flagship event,
         a dynamic 36-hour premiere hackathon where creative minds converge to craft innovative
         solutions to critical social challenges. The event welcomes students from all disciplines who
@@ -25,17 +24,17 @@ export default function About() {
         making <span className="text-primary-red font-bold">›.hack();_ ‘25</span> a holistic platform for learning, growth, and community.
       </p>
 
-      <p className="text-lg font-orbitron text-white mt-10 relative z-10">
+      <p className="text-xl py-16 font-orbitron text-white mt-10 relative z-10">
         6<sup>th</sup> EDITION
       </p>
 
-<div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[1000px] h-[300px] overflow-hidden opacity-30 z-[0]">
-  <img
-    src={circuit}
-    alt="Circuit Bottom"
-    className="w-full h-auto object-contain rotate-180"
-  />
-</div>
+      <div className="absolute bottom-[-40vh] sm:bottom-[-55vh] md:bottom-[-65vh] left-1/2 transform -translate-x-1/2 w-[110vw] sm:w-[95vw] md:w-[75vw] opacity-30 z-0 pointer-events-none">
+        <img
+          src={circuit}
+          alt="Circuit Background"
+          className="w-full h-auto object-cover rotate-180"
+        />
+      </div>
 
     </section>
   );
