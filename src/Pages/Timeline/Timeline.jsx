@@ -1,19 +1,20 @@
 import React from "react";
 import Heading from '../../Components/Heading/Heading';
+import circuit from '../../assets/circuit.svg';
 
 const Timeline = () => {
   return (
     <section
   id="timeline"
   style={{ backgroundColor: '#101111' }}
-  className="py-20 px-4 text-white"
+  className="py-20 px-4 text-white relative"
 >
 
       <Heading heading="timeline" />
 
-      <div className="max-w-5xl mx-auto border border-red-600 rounded-xl p-10 relative">
+      <div className="max-w-5xl mx-auto border border-[#A50C20] rounded-xl p-10 relative">
         
-        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 h-[calc(100%-5rem)] w-0.5 bg-red-600 z-0" />
+        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 h-[calc(100%-5rem)] w-0.5 bg-[#A50C20] z-0" />
 
      
 
@@ -102,6 +103,13 @@ const Timeline = () => {
           
         </div>
       </div>
+      <div className="absolute bottom-[-30vh] sm:bottom-[-45vh] md:bottom-[-55vh] left-1/2 transform -translate-x-1/2 w-[110vw] sm:w-[95vw] md:w-[75vw] opacity-30 z-0 pointer-events-none">
+              <img
+                src={circuit}
+                alt="Circuit Background"
+                className="w-full h-auto object-cover rotate-180"
+              />
+            </div>
     </section>
   );
 };
