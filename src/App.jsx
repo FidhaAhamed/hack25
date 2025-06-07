@@ -8,7 +8,7 @@ import Timeline from './Pages/Timeline/Timeline';
 import Prizepool from './Pages/PrizePool/Prizepool.jsx';
 import Tracks from './Pages/Tracks/Tracks';
 import FAQ from './Pages/FAQ/faq.jsx';
-import Sponsors from './Sponsors.jsx';
+import Sponsors from './Pages/Sponsors/Sponsors.jsx';
 import Footer from './Pages/Footer/Footer.jsx';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
         <Sponsors />
       </section>
       <Footer />
-    </>
+    </div>
   )
 }
 
