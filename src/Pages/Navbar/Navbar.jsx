@@ -17,8 +17,6 @@ const Navbar = () => {
     { label: "About", id: "about" },
     { label: "Timeline", id: "timeline" },
     { label: "Prize Pool", id: "prizepool"},
-    { label: "Tracks", id: "tracks" },
-    { label: "FAQ", id: "faq"},
     { label: "Sponsors", id: "sponsors" },
     
   ];
@@ -39,7 +37,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Hamburger */}
-      <div className="fixed top-4 right-4 z-50 md:hidden">
+      <div className="fixed top-4 right-10 z-50 md:hidden">
         <button onClick={() => setIsOpen(true)} className="text-white">
           <Menu size={32} />
         </button>
@@ -47,11 +45,11 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 w-1/3 h-full bg-black z-50 p-6 transition-transform duration-300 transform ${
+        className={`fixed top-0 right-0 w-1/2 h-120 bg-primary-black z-50 p-6 transition-transform duration-300 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
-        <div className="flex justify-end mb-6">
+        <div className="flex top-4 right-2 z-50 mb-6">
           <button onClick={() => setIsOpen(false)} className="text-white">
             <X size={28} />
           </button>
@@ -61,7 +59,7 @@ const Navbar = () => {
             <li key={item.id}>
               <button
                 onClick={() => handleScroll(item.id)}
-                className="text-white text-lg font-nebula hover:text-red-500"
+                className="text-white text-lg font-nebula hover:text-primary-red"
               >
                 {item.label}
               </button>

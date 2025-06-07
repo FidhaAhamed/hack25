@@ -51,7 +51,7 @@ export default function FAQ() {
   return (
     <section
       id="FAQ"
-      className="relative bg-[#101111] px-6 py-24 text-center sm:px-10 lg:px-16 overflow-hidden"
+      className="relative bg-[#101111] px-6 pb-48 text-center sm:px-10 lg:px-16 overflow-hidden"
     >
       <Heading heading="Frequently Asked Questions" />
 
@@ -91,7 +91,7 @@ export default function FAQ() {
       <img
         src={mascot}
         alt="Mascot"
-        className="absolute bottom-4 pointer-events-none opacity-90"
+        className="absolute bottom-[-2] md:bottom-4  pointer-events-none opacity-90 z-10"
         style={{
           width: '200px',
           right: `${16 + mascotX}px`,
