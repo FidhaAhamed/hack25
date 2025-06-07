@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Heading from '../../Components/Heading/Heading';
-import mascot from '../../../public/Images/moscot.png';
+import mascot from '/Images/moscot.png';
 
 const faqData = [
   {
