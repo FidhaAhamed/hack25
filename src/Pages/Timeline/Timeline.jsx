@@ -10,10 +10,12 @@ const Timeline = () => {
 >
 
       <Heading heading="timeline" />
-      
-      <div className="max-w-5xl mx-auto border border-[#A50C20] rounded-xl p-10 relative">
-        {/* Vertical line */}
-        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 h-[calc(100%-5rem)] w-0.5 bg-[#A50C20] z-0" />
+
+      <div className="max-w-5xl mx-auto border border-red-600 rounded-xl p-10 relative">
+        
+        <div className="absolute top-10 left-1/2 transform -translate-x-1/2 h-[calc(100%-5rem)] w-0.5 bg-red-600 z-0" />
+
+     
 
         {/* Timeline Events */}
         <div className="relative z-10 space-y-16">
