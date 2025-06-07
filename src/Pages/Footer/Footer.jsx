@@ -33,7 +33,7 @@ export default function Footer() {
         <Heading heading="contact us" />
 
         {/* Contact Info */}
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-center gap-10 md:gap-48 max-w-4xl mx-auto my-20 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-center gap-10 md:gap-48 max-w-4xl mx-auto my-2 md:my-20 text-center md:text-left">
           {[
             { name: 'NANDANA JOLLY', number: '+91 81299 65776' },
             { name: 'NEHA SAVY', number: '+91 85909 24239' }
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
 
         {/* Social Icons */}
-        <div className="flex justify-center gap-6 mb-16 flex-wrap">
+        <div className="flex justify-center gap-6 my-10 flex-wrap">
           {[
             { icon: FaInstagram, url: 'https://www.instagram.com/ieeemace/' },
             { icon: FaXTwitter, url: 'https://www.x.com/ieeemace/' },
