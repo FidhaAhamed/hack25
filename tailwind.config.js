@@ -13,6 +13,11 @@ export default {
         moonwalkmiss: ['Moonwalk Miss', 'cursive'],
         csclairemonodrawn: ['CSClaireMonoDrawn', 'monospace'],
       },
+   
+      colors: {
+        'primary-red': '#A50C20',
+        'primary-black': '#101111',
+      },
     },
   },
   plugins: [],
