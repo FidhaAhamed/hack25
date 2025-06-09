@@ -3,10 +3,11 @@ import Heading from "../../Components/Heading/Heading";
 import circuit from "../../assets/circuit.svg";
 
 const events = [
-  { date: "May 1", title: "Website Live and Theme Release" },
-  { date: "July 4", title: "Registration Live" },
-  { date: "August 4", title: "Abstract Submission Deadline" },
-  { date: "August 15", title: "Releasing Shortlisted Teams" },
+  { date: "May 30", title: "Theme Release" },
+  { date: "June 11", title: "Website Live" },
+  { date: "June 14", title: "Registration Live" },
+  { date: "July 15", title: "Abstract Submission Deadline" },
+  { date: "August 10", title: "Releasing Shortlisted Teams" },
   { date: "August 22 - 24", title: "Offline Hackathon" },
 ];
 
