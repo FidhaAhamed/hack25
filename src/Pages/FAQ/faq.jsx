@@ -64,7 +64,7 @@ export default function FAQ() {
               hover:bg-[#2b2b2b] hover:shadow-xl hover:scale-[1.03] transition-transform transition-colors duration-300`}
           >
             <div className="flex justify-between items-center">
-              <h3 className="text-xl font-semibold text-primary-red font-csclairemonodrawn select-none">
+              <h3 className="text-lg md:text-xl font-semibold text-primary-red font-csclairemonodrawn select-none">
                 {item.question}
               </h3>
               <div

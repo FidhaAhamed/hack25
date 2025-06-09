@@ -1,4 +1,5 @@
 import { ArrowRightCircle } from 'lucide-react';
+import DevfolioButton from '../../Components/DevfolioButton';
 
 export default function Hero() {
   return (
@@ -21,15 +22,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Register Now Button OUTSIDE the padded div */}
       <div className="absolute bottom-16 w-full flex justify-center z-10">
-        <button className="group flex items-center gap-3 text-white text-2xl md:text-3xl font-nebula tracking-wide hover:text-[#7C0918] transition-all overflow-hidden whitespace-nowrap">
-          REGISTER NOW
-          <ArrowRightCircle
-            strokeWidth={1}
-            className="w-8 h-8 text-white group-hover:text-[#A50C20] transition"
-          />
-        </button>
+        <DevfolioButton />
       </div>
     </section>
   );

@@ -14,7 +14,7 @@ export default function About() {
 
       <p className="max-w-4xl mx-auto text-white font-csclairemonodrawn text-base md:text-lg text-justify leading-relaxed relative z-10">
         <span className="text-primary-red font-bold">›.hack();_ ‘25</span> is the 6th edition of IEEE MACE SB's flagship event,
-        a dynamic 36-hour premiere hackathon where creative minds converge to craft innovative
+        a dynamic 36-hour premier hackathon where creative minds converge to craft innovative
         solutions to critical social challenges. The event welcomes students from all disciplines who
         share a passion for technology and social impact. Throughout the hackathon, participants will be
         guided and evaluated by esteemed industry professionals, fostering an environment that encourages

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // Or any icon lib you use
+import { Menu, X } from "lucide-react"; 
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,8 +15,8 @@ const Navbar = () => {
   const navItems = [
     { label: "Home", id: "home" },
     { label: "About", id: "about" },
+    { label: "Tracks", id: "tracks" },
     { label: "Timeline", id: "timeline" },
-    { label: "Prize Pool", id: "prizepool"},
     { label: "Sponsors", id: "sponsors" },
     
   ];
@@ -45,7 +45,7 @@ const Navbar = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`fixed top-0 right-0 w-1/2 h-120 bg-primary-black z-50 p-6 transition-transform duration-300 transform ${
+        className={`fixed top-0 right-0 w-3/4 h-120 bg-black/90 backdrop-blur-md z-50 p-6 transition-transform duration-300 transform ${
           isOpen ? "translate-x-0" : "translate-x-full"
         } md:hidden`}
       >
