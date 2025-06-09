@@ -16,7 +16,7 @@ const DevfolioButton = () => {
   return (
     <div
       className="apply-button"
-      data-hackathon-slug=">.hack();_25" 
+      data-hackathon-slug="hack25" 
       data-button-theme="dark"
       style={{ height: '44px', width: '312px' }}
     ></div>
