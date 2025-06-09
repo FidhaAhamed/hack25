@@ -42,7 +42,7 @@ const Sponsors = () => {
     <section className="bg-[#101111] py-12 px-4" id="sponsors">
       <Heading heading="previous SPONSORS" />
       <div className="max-w-5xl mx-auto border border-[#A50C20] rounded-xl p-10 relative">
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 justify-items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4  gap-6 justify-items-center max-w-6xl mx-auto">
           {sponsors.map((logo, index) => (
             <div
               key={index}
@@ -51,7 +51,7 @@ const Sponsors = () => {
               <img
                 src={logo}
                 alt={`Sponsor ${index + 1}`}
-                className="h-20 object-contain"
+                className="w-40 h-10 md:h-20 object-contain"
               />
             </div>
           ))}

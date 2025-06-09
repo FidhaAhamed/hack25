@@ -62,11 +62,11 @@ export default function Footer() {
             <a
               key={i}
               href={url}
-              className="w-14 h-14 rounded-full bg-[#A50C20] text-white flex items-center justify-center hover:scale-110 hover:from-red-500 hover:to-red-700 transition-all duration-300 shadow-lg"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-[#A50C20] text-white flex items-center justify-center hover:scale-110 hover:from-red-500 hover:to-red-700 transition-all duration-300 shadow-lg"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Icon size={24} />
+              <Icon size={22} />
             </a>
           ))}
         </div>

@@ -5,9 +5,9 @@ import circuit from "../../assets/circuit.svg";
 const events = [
   { date: "May 1", title: "Website Live and Theme Release" },
   { date: "July 4", title: "Registration Live" },
-  { date: "August 4", title: "Abstraction submission Deadline" },
+  { date: "August 4", title: "Abstract Submission Deadline" },
   { date: "August 15", title: "Releasing Shortlisted Teams" },
-  { date: "August 22", title: "Offline Hackathon" },
+  { date: "August 22 - 24", title: "Offline Hackathon" },
 ];
 
 export default function Timeline() {
@@ -28,7 +28,7 @@ export default function Timeline() {
             return (
               <React.Fragment key={index}>
                 {/* Left column */}
-                <div className={`px-4 ${isLeft ? "text-right" : ""}`}>
+                <div className={`${isLeft ? "text-right" : ""}`}>
                   {isLeft && (
                     <>
                       <h3 className="font-bold font-csclairemonodrawn text-lg md:text-2xl">
@@ -50,7 +50,7 @@ export default function Timeline() {
                 </div>
 
                 {/* Right column */}
-                <div className={`px-4 ${!isLeft ? "text-left" : ""}`}>
+                <div className={` ${!isLeft ? "text-left" : ""}`}>
                   {!isLeft && (
                     <>
                       <h3 className="font-bold font-csclairemonodrawn text-lg md:text-2xl">
