@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative w-full h-screen bg-cover bg-center overflow-x-hidden"
-      style={{ backgroundImage: "url('/Images/hero-bg.png')" }}
+      style={{ backgroundImage: "url('/Images/hero-bg.webp')" }}
     >
       <div className="absolute inset-0 bg-black bg-opacity-20" />
 
