@@ -1,6 +1,6 @@
 import React from 'react';
 import Heading from '../../Components/Heading/Heading';
-import { FiPhone } from 'react-icons/fi';
+import { FiPhone, FiMapPin } from 'react-icons/fi';
 import {
   FaInstagram,
   FaXTwitter,
@@ -33,7 +33,7 @@ export default function Footer() {
         <Heading heading="contact us" />
 
         {/* Contact Info */}
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-center gap-10 md:gap-48 max-w-4xl mx-auto my-2 md:my-20 text-center md:text-left">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-center gap-10 md:gap-48 max-w-4xl mx-auto my-2 md:my-10 text-center md:text-left">
           {[
             { name: 'NANDANA JOLLY', number: '+91 81299 65776' },
             { name: 'NEHA SAVY', number: '+91 85909 24239' }
@@ -46,9 +46,22 @@ export default function Footer() {
                 <FiPhone className="text-[#A50C20]" size={22} />
                 <span>{lead.name}</span>
               </div>
-              <div className="text-[#A50C20] font-mono text-base tracking-wide">{lead.number}</div>
+              <div className="text-[#A50C20] font-mono text-base tracking-wide mb-4">{lead.number}</div>
             </div>
           ))}
+        </div>
+
+        {/* College Location */}
+        <div className="flex justify-center items-center gap-2 mt-6 text-lg text-white font-nebula text-center">
+          <FiMapPin className="text-[#A50C20]" size={18} />
+          <a
+            href="https://www.google.com/maps/place/MA+College+Indoor+Stadium(Baselious+Paulose+Indoor+Stadium)/@10.0555705,76.6167433,17z/data=!3m1!4b1!4m6!3m5!1s0x3b07e61bf342e7cd:0x11763aabc95b261b!8m2!3d10.0555652!4d76.6193182!16s%2Fg%2F11bw7d9klb?entry=ttu&g_ep=EgoyMDI1MDYxMS4wIKXMDSoASAFQAw%3D%3D"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary-red"
+          >
+            MA College Indoor stadium, Kothmangalam
+          </a>
         </div>
 
         {/* Social Icons */}

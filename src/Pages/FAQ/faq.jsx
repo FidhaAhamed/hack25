@@ -4,6 +4,10 @@ import mascot from '/Images/moscot.png';
 
 const faqData = [
   {
+    question: "How many participants can be in a team?",
+    answer: "Teams can consist of 1 to 4 participants."
+  },
+  {
     question: "Who can participate in >.hack();_?",
     answer: "Students from all disciplines with a passion for technology and innovation are welcome to participate."
   },
