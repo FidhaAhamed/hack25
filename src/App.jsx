@@ -6,6 +6,7 @@ import Tracks from './Pages/Tracks/Tracks';
 import Timeline from './Pages/Timeline/Timeline.jsx' 
 import PreviousSponsors from './Pages/Sponsors/previousSponsors.jsx';
 import Sponsors from './Pages/Sponsors/Sponsors.jsx';
+import MediaPartners from './Pages/Sponsors/MediaPartner.jsx';
 import FAQ from './Pages/FAQ/faq.jsx'
 import Footer from './Pages/Footer/Footer.jsx';
 
@@ -19,6 +20,7 @@ function App() {
       <Tracks />
       <Timeline />
       <Sponsors />
+      <MediaPartners />
       <PreviousSponsors />
       <FAQ/>
       <Footer />
