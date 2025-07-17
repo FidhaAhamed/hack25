@@ -5,7 +5,7 @@ import circuit from "../../assets/circuit.svg";
 const events = [
   { date: "May 30", title: "Theme Release" },
   { date: "June 15", title: "Website and Registration Live" },
-  { date: "July 15", title: "Abstract Submission Deadline" },
+  { date: "July 25", title: "Abstract Submission Deadline" },
   { date: "August 10", title: "Releasing Shortlisted Teams" },
   { date: "August 22 - 24", title: "Offline Hackathon" },
 ];
