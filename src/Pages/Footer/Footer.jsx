@@ -5,7 +5,8 @@ import {
   FaInstagram,
   FaXTwitter,
   FaLinkedinIn,
-  FaGlobe
+  FaGlobe,
+  FaWhatsapp
 } from 'react-icons/fa6';
 
 
@@ -70,7 +71,8 @@ export default function Footer() {
             { icon: FaInstagram, url: 'https://www.instagram.com/ieeemace/' },
             { icon: FaXTwitter, url: 'https://www.x.com/ieeemace/' },
             { icon: FaLinkedinIn, url: 'https://www.linkedin.com/company/ieeemace/' },
-            { icon: FaGlobe, url: 'https://www.ieeemace.org/' }
+            { icon: FaGlobe, url: 'https://www.ieeemace.org/' },
+            { icon: FaWhatsapp, url: 'https://chat.whatsapp.com/CMdvATPhkEo5gpfjL0gGlA?mode=r_c' }
           ].map(({ icon: Icon, url }, i) => (
             <a
               key={i}
