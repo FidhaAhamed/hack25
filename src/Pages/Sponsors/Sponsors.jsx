@@ -4,7 +4,7 @@ import Heading from '../../Components/Heading/Heading';
 import devfolio from '../../assets/devfolio.png';
 import ethindia from '/Images/ETHIndia.png';
 import keyvalue from '/Images/KeyValue.png';
-import innovature from '/Images/Innovature.JPG';
+import innovature from '/Images/Innovature.png';
 
 const sponsors = [
   { src: devfolio, alt: 'DEVFOLIO LOGO', link: 'https://devfolio.co' },
