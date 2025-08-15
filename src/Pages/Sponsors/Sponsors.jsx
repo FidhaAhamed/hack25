@@ -15,6 +15,9 @@ const sponsors = [
 const bronzeSponsors = [
   { src: keyvalue, alt: 'KEYVALUE LOGO', link: 'https://www.keyvalue.systems/' },
   { src: innovature, alt: 'INNOVATURE LOGO', link: 'https://innovature.ai' },
+];
+
+const silverSponsors = [
   { src: orkes, alt: 'ORKES LOGO', link: 'https://www.orkes.io/' }
 ];
 
@@ -22,6 +25,37 @@ const Sponsors = () => {
   return (
     <section className="bg-[#101111] py-12 px-4" id="sponsors">
       <Heading heading="our SPONSORS" />
+
+      {/* Silver sponsors block */}
+      <div className="max-w-5xl mx-auto border border-[#A50C20] rounded-xl p-8 relative mb-8">
+        <div className="mb-6">
+          <h3 className="font-orbitron text-white uppercase font-bold text-center text-2xl md:text-3xl tracking-wide">
+            Silver Sponsors
+          </h3>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-1 gap-6 justify-items-center max-w-6xl mx-auto">
+          {silverSponsors.map((logo, index) => (
+            <div
+              key={index}
+              className="p-4 rounded-xl shadow hover:shadow-lg transition-all duration-300 flex justify-center items-center"
+            >
+              <a
+                href={logo.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="w-40 h-10 md:h-20 object-contain"
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* Bronze sponsors block */}
       <div className="max-w-5xl mx-auto border border-[#A50C20] rounded-xl p-8 relative mb-8">
@@ -31,7 +65,7 @@ const Sponsors = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 justify-items-center max-w-6xl mx-auto">
           {bronzeSponsors.map((logo, index) => (
             <div
               key={index}
