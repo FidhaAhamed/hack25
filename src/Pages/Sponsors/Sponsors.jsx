@@ -5,6 +5,7 @@ import devfolio from '../../assets/devfolio.png';
 import ethindia from '/Images/ETHIndia.png';
 import keyvalue from '/Images/KeyValue.png';
 import innovature from '/Images/Innovature.png';
+import orkes from '/Images/orkes.png';
 
 const sponsors = [
   { src: devfolio, alt: 'DEVFOLIO LOGO', link: 'https://devfolio.co' },
@@ -13,7 +14,8 @@ const sponsors = [
 
 const bronzeSponsors = [
   { src: keyvalue, alt: 'KEYVALUE LOGO', link: 'https://www.keyvalue.systems/' },
-  { src: innovature, alt: 'INNOVATURE LOGO', link: 'https://innovature.ai' }
+  { src: innovature, alt: 'INNOVATURE LOGO', link: 'https://innovature.ai' },
+  { src: orkes, alt: 'ORKES LOGO', link: 'https://www.orkes.io/' }
 ];
 
 const Sponsors = () => {
@@ -29,7 +31,7 @@ const Sponsors = () => {
           </h3>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 justify-items-center max-w-6xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 justify-items-center max-w-6xl mx-auto">
           {bronzeSponsors.map((logo, index) => (
             <div
               key={index}
